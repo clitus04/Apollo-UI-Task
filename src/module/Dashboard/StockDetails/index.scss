@@ -1,0 +1,15 @@
+@import "../../../colors";
+
+.stock__details {
+  .growth {
+    color: $primary_green;
+  }
+
+  .loss {
+    color: $primary_pink;
+  }
+
+  .p-card-body {
+    padding: 0.25rem;
+  }
+}

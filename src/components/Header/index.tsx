@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./index.scss";
-import { BreadCrumb } from "primereact/breadcrumb";
+import BreadCrumb from "../BreadCrumb";
 import { InputText } from "primereact/inputtext";
 import ProfileImg from "../../assets/profile.jpg";
 
@@ -12,17 +12,27 @@ type Prop = {
 
 function Header({ sidebarVisible, setSidebarVisible }: Prop) {
   const [items, setItems] = useState([
-    { label: "E-Commerce Dashboard", url: "/", seperator: null },
+    { label: "E-Commerce Dashboard", url: "/" },
   ]);
 
   const location = useLocation();
 
   useEffect(() => {
     const splittedItems = location.pathname.split("/");
+    splittedItems.shift();
+    if (location.pathname === "/") {
+      setItems([{ label: "E-Commerce Dashboard", url: "/" }]);
+    } else {
+      const items = splittedItems.map((item: any) => ({
+        label: item,
+        url: `/${item}`,
+      }));
+      setItems(items);
+    }
   }, [location.pathname]);
 
   return (
-    <div className="header h-6rem flex align-items-center justify-content-between">
+    <div className="header h-6rem flex align-items-center justify-content-between sticky top-0">
       <div className="flex align-items-center">
         <span className="sidebar__toggler">
           <i
@@ -30,10 +40,7 @@ function Header({ sidebarVisible, setSidebarVisible }: Prop) {
             onClick={() => setSidebarVisible(!sidebarVisible)}
           ></i>
         </span>
-        <BreadCrumb
-          model={items}
-          separatorIcon={<span className="mx-2 text-xs">/</span>}
-        />
+        <BreadCrumb items={items} seperator={"/"} />
       </div>
       <div className="flex align-items-center justify-content-around w-4">
         <span className="search">

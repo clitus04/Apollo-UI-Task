@@ -4,7 +4,12 @@ import { sidebarlinks } from "./Sidebar.data";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Menu = ({ key, menu }: { key: number; menu: any }) => {
+interface MenuProp {
+  key: number;
+  menu: any;
+}
+
+const Menu = ({ key, menu }: MenuProp) => {
   const navigate = useNavigate();
 
   return (
@@ -19,7 +24,7 @@ const Menu = ({ key, menu }: { key: number; menu: any }) => {
   );
 };
 
-const SubMenu = ({ key, menu }: { key: number; menu: any }) => {
+const SubMenu = ({ key, menu }: MenuProp) => {
   const [isOpened, setIsOpened] = useState<boolean>(false);
   return (
     <div key={key} className="flex flex-column">
@@ -52,7 +57,7 @@ const SubMenu = ({ key, menu }: { key: number; menu: any }) => {
 
 function Sidebar() {
   return (
-    <div className="sidebar flex flex-column">
+    <div className="flex flex-column">
       <div className="h-6rem flex justify-content-center align-items-center">
         <ApolloLogo color={"#6366F1"} />
       </div>

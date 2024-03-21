@@ -1,6 +1,9 @@
 @import "../../colors";
 
 .header {
+  backdrop-filter: blur(10px);
+  padding: 0 2rem;
+
   .sidebar__toggler {
     cursor: pointer;
     padding: 0.5rem;

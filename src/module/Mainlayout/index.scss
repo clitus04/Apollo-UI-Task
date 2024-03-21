@@ -2,19 +2,25 @@
 
 .app__layout {
   height: 100vh;
-  padding: 0;
-  margin: 0;
+
+  .main__layout {
+    background-color: $light_blue;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 
   .layout__container {
     padding: 0 2rem;
-    background-color: $light_blue;
   }
 
-  .sidebar__expanded {
-    display: block;
+  .sidebar {
+    transition: width 0.3s ease;
   }
 
-  .sidebar__closed {
-    display: none;
+  .closed {
+    width: 0 !important;
   }
 }

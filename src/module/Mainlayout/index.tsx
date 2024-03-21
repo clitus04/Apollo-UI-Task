@@ -7,16 +7,16 @@ import { useState } from "react";
 function Mainlayout() {
   const [sidebarVisible, setSidebarVisible] = useState<boolean>(true);
   return (
-    <div className="app__layout grid">
+    <div className="app__layout grid flex-nowrap">
       <div
-        className={`col-4 md:col-3 lg:col-2 sidebar__${
-          sidebarVisible ? "expanded" : "closed"
+        className={`col-4 md:col-3 lg:col-2 sidebar ${
+          sidebarVisible ? "" : "closed"
         }`}
       >
         <Sidebar />
       </div>
       <div
-        className={`layout__container ${
+        className={`main__layout ${
           sidebarVisible ? "col-8 md:col-9 lg:col-10" : "col-12"
         }`}
       >
@@ -24,7 +24,9 @@ function Mainlayout() {
           sidebarVisible={sidebarVisible}
           setSidebarVisible={setSidebarVisible}
         />
-        <Outlet />
+        <div className="layout__container">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
