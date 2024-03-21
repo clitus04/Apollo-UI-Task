@@ -1,27 +1,9 @@
 import { memo } from "react";
-import {
-  CategoryScale,
-  LinearScale,
-  Chart,
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
+import { Chart } from "primereact/chart";
 import { revenueOverviewData } from "./revenueOverview.data";
 import { Card } from "primereact/card";
 
 function RevenueOverview() {
-  Chart.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend
-  );
-
   const options: any = {
     plugins: {
       legend: {
@@ -33,7 +15,8 @@ function RevenueOverview() {
   return (
     <div className="col-12 lg:col-9 h-35rem">
       <Card className="h-full" title="Revenue Overview">
-        <Bar
+        <Chart
+          type="bar"
           className="h-full w-full"
           data={revenueOverviewData}
           options={options}
