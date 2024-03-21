@@ -8,6 +8,10 @@ function RevenueOverview() {
     plugins: {
       legend: {
         position: "bottom",
+        display: true,
+        labels: {
+          usePointStyle: true,
+        },
       },
     },
   };

@@ -27,8 +27,8 @@ function StockDetails() {
                       ></i>
                     </div>
                   </div>
-                  <div className="w-7">
-                    <img src={item.chart} alt="" className="w-full" />
+                  <div className="w-7 h-full">
+                    <img src={item.chart} alt="" className="w-full h-full" />
                   </div>
                 </div>
               </Card>

@@ -3,6 +3,7 @@
 .header {
   backdrop-filter: blur(10px);
   padding: 0 2rem;
+  z-index: 1;
 
   .sidebar__toggler {
     cursor: pointer;

@@ -8,6 +8,10 @@ function CategoryOverview() {
     plugins: {
       legend: {
         position: "bottom",
+        display: true,
+        labels: {
+          usePointStyle: true,
+        },
       },
     },
   };
@@ -16,8 +20,8 @@ function CategoryOverview() {
     <div className="col-12 lg:col-3 h-35rem">
       <Card className="h-full" title="Sales by Category">
         <Chart
+          className="flex justify-content-center"
           type="pie"
-          className="mt-8"
           data={categoryOverviewData}
           options={options}
         />
