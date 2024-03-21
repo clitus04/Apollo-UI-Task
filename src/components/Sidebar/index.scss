@@ -1,0 +1,42 @@
+@import "../../colors";
+
+.sidebar {
+  .menu__links__container {
+    padding-left: 1.5rem;
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .menu__title {
+    color: $primary_blue;
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  i {
+    color: $primary_blue;
+    margin-right: 0.5rem;
+  }
+
+  .menu__name {
+    font-size: 1rem;
+    color: $text_light;
+  }
+
+  .sublinks {
+    height: 0;
+    transition: height;
+    transition-duration: 0.3s;
+  }
+
+  .expanded {
+    height: auto;
+  }
+}

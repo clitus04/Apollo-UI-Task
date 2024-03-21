@@ -1,0 +1,19 @@
+@import "primeflex/primeflex.scss";
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+
+  #root {
+    overflow: hidden;
+  }
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

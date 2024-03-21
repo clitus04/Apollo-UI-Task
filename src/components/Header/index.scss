@@ -1,0 +1,36 @@
+@import "../../colors";
+
+.header {
+  .sidebar__toggler {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+
+    &:hover {
+      background-color: $primary_blue;
+      color: #fff;
+      transition-duration: 0.2s;
+    }
+  }
+
+  .search {
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .pi-search {
+      margin-left: 0.5rem;
+    }
+
+    input {
+      border: none;
+    }
+  }
+}
