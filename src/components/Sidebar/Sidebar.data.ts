@@ -10,7 +10,7 @@ export const sidebarlinks = [
       {
         name: "Banking",
         icon: "pi-home",
-        path: "/first",
+        path: "/dashboard/banking",
       },
     ],
   },
