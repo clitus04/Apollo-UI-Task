@@ -4,7 +4,7 @@ export const categoryOverviewData = {
     {
       label: "My First Dataset",
       data: [300, 50, 100],
-      backgroundColor: ["#5457CD", "#5457CD", "#BCBDF9"],
+      backgroundColor: ["#0003CE", "#5457CD", "#BCBDF9"],
       borderColor: ["#fff", "#fff", "#fff"],
       borderWidth: 1,
     },

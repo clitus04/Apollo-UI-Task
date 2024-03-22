@@ -5,6 +5,10 @@
   }
 
   .dataview {
-    height: 35rem;
+    height: 32rem;
+
+    .p-rating-item-active .p-rating-icon {
+      color: #5356cc;
+    }
   }
 }
