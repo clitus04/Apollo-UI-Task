@@ -28,7 +28,7 @@ Start the server
 
 ## Screenshots
 
-![Project Screenshot](/relative/src/assets/Screenshot.png?raw=true "Screenshot")
+![Project Screenshot](/src/assets/Screenshot.png?raw=true "Screenshot")
 
 ## Tech Stack
 
