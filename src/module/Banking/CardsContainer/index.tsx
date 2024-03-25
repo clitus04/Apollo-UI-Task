@@ -1,5 +1,4 @@
 import { memo } from "react";
-import "./index.scss";
 import CardLayout from "./CardLayout";
 import cardBackground from "../../../assets/card-background.png";
 import cardLogo from "../../../assets/visa.svg";

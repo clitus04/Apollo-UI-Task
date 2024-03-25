@@ -17,21 +17,34 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm install or yarn install
+  npm install
+```
+
+or
+
+```bash
+  yarn install
 ```
 
 Start the server
 
 ```bash
-  npm run start or yarn dev
+  npm run dev
 ```
+
+or
+
+```bash
+  yarn dev
+```
+
 ## Tech Stack
 
 - React
 - Vite
 - Primereact
 - Primeflex
-  
+
 ## Screenshots
 
 ![Project Screenshot](/src/assets/Screenshot.png?raw=true "Screenshot")
