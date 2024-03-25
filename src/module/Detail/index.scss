@@ -1,0 +1,55 @@
+.comments {
+  .comment__row {
+    display: flex;
+    align-items: start;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+  }
+
+  .count {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 1px solid #acacac;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+  }
+
+  .name {
+    font-weight: bold;
+    color: black;
+    font-size: 0.85rem;
+  }
+
+  .date {
+    font-size: 0.75rem;
+  }
+
+  .title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+  }
+}
+
+.detail__content {
+  margin-top: 3rem;
+
+  .title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  p,
+  li {
+    margin: 1.5rem 0;
+    color: black;
+    line-height: 1.5rem;
+  }
+}

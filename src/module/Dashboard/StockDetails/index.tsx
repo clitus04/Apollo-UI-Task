@@ -1,7 +1,6 @@
 import { memo } from "react";
 import { salesDetails } from "./stockdetails.data";
 import { Card } from "primereact/card";
-import "./index.scss";
 
 function StockDetails() {
   return (

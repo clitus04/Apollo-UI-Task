@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import "./index.scss";
 import BreadCrumb from "../BreadCrumb";
 import { InputText } from "primereact/inputtext";
-import ProfileImg from "../../assets/profile.jpg";
+import Profile from "../../assets/tony.jpg";
 
 type Prop = {
   sidebarVisible: boolean;
@@ -43,12 +43,12 @@ function Header({ sidebarVisible, setSidebarVisible }: Prop) {
         <BreadCrumb items={items} seperator={"/"} />
       </div>
       <div className="flex align-items-center justify-content-around w-4">
-        <span className="search">
+        <span className="p-input-icon-left">
           <i className="pi pi-search" />
           <InputText placeholder="Search" />
         </span>
         <i className="pi pi-cog"></i>
-        <img src={ProfileImg} alt="" className="h-2rem w-2rem border-circle" />
+        <img src={Profile} alt="" className="h-2rem w-2rem border-circle" />
       </div>
     </div>
   );

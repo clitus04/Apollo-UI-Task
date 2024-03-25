@@ -10,4 +10,62 @@
       top: -50px;
     }
   }
+
+  .articles {
+    .p-card {
+      box-shadow: none;
+      background-color: #f5f5f5;
+    }
+  }
+
+  .recent__articles {
+    padding: 2rem;
+
+    .text-black {
+      color: black;
+    }
+
+    .p-card {
+      box-shadow: none;
+
+      .divider {
+        height: 2px;
+        margin-bottom: 0.5rem;
+      }
+
+      .title {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      &:nth-child(1) {
+        .divider {
+          background-color: blue;
+        }
+
+        .category {
+          color: blue;
+        }
+      }
+      &:nth-child(2) {
+        .divider {
+          background-color: crimson;
+        }
+
+        .category {
+          color: crimson;
+        }
+      }
+      &:nth-child(3) {
+        .divider {
+          background-color: chocolate;
+        }
+
+        .category {
+          color: chocolate;
+        }
+      }
+    }
+  }
 }

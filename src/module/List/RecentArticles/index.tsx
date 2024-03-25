@@ -1,5 +1,4 @@
 import { memo } from "react";
-import "./index.scss";
 import { Card } from "primereact/card";
 import { recentArticles } from "./recentArticles.data";
 

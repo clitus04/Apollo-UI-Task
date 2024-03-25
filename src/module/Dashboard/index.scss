@@ -1,3 +1,5 @@
+@import "../../colors";
+
 .dashboard {
   .p-card-title {
     font-size: 1.1rem;
@@ -14,5 +16,28 @@
     .p-rating-item-active .p-rating-icon {
       color: #5356cc;
     }
+    .p-input-icon-left {
+      input {
+        border-radius: 2rem;
+      }
+    }
+    .p-button {
+      background: #4f46e5;
+      border-color: #4f46e5;
+    }
+  }
+}
+
+.stock__details {
+  .growth {
+    color: $primary_green;
+  }
+
+  .loss {
+    color: $primary_pink;
+  }
+
+  .p-card-body {
+    padding: 0.25rem;
   }
 }

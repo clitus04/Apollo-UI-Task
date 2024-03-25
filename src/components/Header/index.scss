@@ -21,20 +21,9 @@
     }
   }
 
-  .search {
-    height: 2rem;
-    background-color: #fff;
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-
-    .pi-search {
-      margin-left: 0.5rem;
-    }
-
+  .p-input-icon-left {
     input {
-      border: none;
+      border-radius: 2rem;
     }
   }
 }

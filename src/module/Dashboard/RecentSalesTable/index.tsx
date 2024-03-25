@@ -1,5 +1,4 @@
 import { memo, useCallback } from "react";
-import "./index.scss";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { recentSales } from "./recentSales.data";
@@ -36,7 +35,7 @@ function TableLayout() {
         <div className="flex align-items-center justify-content-between mb-4">
           <span className="title">Recent Sales</span>
           <div className="flex align-items-center">
-            <div className="search">
+            <div className="p-input-icon-left">
               <i className="pi pi-search"></i>
               <InputText placeholder="Search" />
             </div>
