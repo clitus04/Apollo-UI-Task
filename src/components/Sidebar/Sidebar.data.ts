@@ -9,7 +9,7 @@ export const sidebarlinks = [
       },
       {
         name: "Banking",
-        icon: "pi-home",
+        icon: "pi-image",
         path: "/dashboard/banking",
       },
     ],
@@ -19,65 +19,65 @@ export const sidebarlinks = [
     links: [
       {
         name: "Blog",
-        icon: "pi-home",
+        icon: "pi-comment",
         links: [
           {
             name: "List",
-            icon: "pi-home",
-            path: "/first/second",
+            icon: "pi-list",
+            path: "/apps/blog/list",
           },
           {
             name: "Detail",
-            icon: "pi-home",
+            icon: "pi-info-circle",
             path: "/",
           },
           {
             name: "Edit",
-            icon: "pi-home",
+            icon: "pi-pencil",
             path: "/",
           },
         ],
       },
       {
         name: "Calendar",
-        icon: "pi-home",
+        icon: "pi-calendar",
         path: "/",
       },
       {
         name: "Chat",
-        icon: "pi-home",
+        icon: "pi-comments",
         path: "/",
       },
       {
         name: "Files",
-        icon: "pi-home",
+        icon: "pi-folder",
         path: "/",
       },
       {
         name: "Mail",
-        icon: "pi-home",
+        icon: "pi-envelope",
         path: "/",
         links: [
           {
             name: "Inbox",
-            icon: "pi-home",
+            icon: "pi-inbox",
             path: "/",
           },
           {
             name: "Compose",
-            icon: "pi-home",
+            icon: "pi-pencil",
             path: "/",
           },
           {
             name: "Detail",
-            icon: "pi-home",
+            icon: "pi-comment",
             path: "/",
           },
         ],
       },
       {
         name: "Task List",
-        icon: "pi-home",
+        icon: "pi-check-square",
         path: "/",
       },
     ],
@@ -87,82 +87,82 @@ export const sidebarlinks = [
     links: [
       {
         name: "Form Layout",
-        icon: "pi-home",
+        icon: "pi-id-card",
         path: "/",
       },
       {
         name: "Input",
-        icon: "pi-home",
+        icon: "pi-check-square",
         path: "/",
       },
       {
         name: "Float Label",
-        icon: "pi-home",
+        icon: "pi-bookmark",
         path: "/",
       },
       {
         name: "Invalid State",
-        icon: "pi-home",
+        icon: "pi-exclamation-circle",
         path: "/",
       },
       {
         name: "Button",
-        icon: "pi-home",
+        icon: "pi-box",
         path: "/",
       },
       {
         name: "Table",
-        icon: "pi-home",
+        icon: "pi-table",
         path: "/",
       },
       {
         name: "List",
-        icon: "pi-home",
+        icon: "pi-list",
         path: "/",
       },
       {
         name: "Tree",
-        icon: "pi-home",
+        icon: "pi-share-alt",
         path: "/",
       },
       {
         name: "Panel",
-        icon: "pi-home",
+        icon: "pi-tablet",
         path: "/",
       },
       {
         name: "Overlay",
-        icon: "pi-home",
+        icon: "pi-clone",
         path: "/",
       },
       {
         name: "Media",
-        icon: "pi-home",
+        icon: "pi-image",
         path: "/",
       },
       {
         name: "Menu",
-        icon: "pi-home",
+        icon: "pi-bars",
         path: "/",
       },
       {
         name: "Message",
-        icon: "pi-home",
+        icon: "pi-comment",
         path: "/",
       },
       {
         name: "File",
-        icon: "pi-home",
+        icon: "pi-file",
         path: "/",
       },
       {
         name: "Chart",
-        icon: "pi-home",
+        icon: "pi-chart-bar",
         path: "/",
       },
       {
         name: "Disc",
-        icon: "pi-home",
+        icon: "pi-circle-off",
         path: "/",
       },
     ],
@@ -172,12 +172,12 @@ export const sidebarlinks = [
     links: [
       {
         name: "Free Blocks",
-        icon: "pi-home",
+        icon: "pi-eye",
         path: "/",
       },
       {
         name: "All Blocks",
-        icon: "pi-home",
+        icon: "pi-globe",
         path: "/",
       },
     ],
@@ -187,22 +187,22 @@ export const sidebarlinks = [
     links: [
       {
         name: "PrimeIcons",
-        icon: "pi-home",
+        icon: "pi-prime",
         path: "/",
       },
       {
         name: "Colors",
-        icon: "pi-home",
+        icon: "pi-palette",
         path: "/",
       },
       {
         name: "PrimeFlex",
-        icon: "pi-home",
+        icon: "pi-desktop",
         path: "/",
       },
       {
         name: "Figma",
-        icon: "pi-home",
+        icon: "pi-pencil",
         path: "/",
       },
     ],
@@ -212,99 +212,99 @@ export const sidebarlinks = [
     links: [
       {
         name: "Landing",
-        icon: "pi-home",
+        icon: "pi-globe",
         path: "/",
       },
       {
         name: "Auth",
-        icon: "pi-home",
+        icon: "pi-user",
         path: "/",
         links: [
           {
             name: "Login",
-            icon: "pi-home",
+            icon: "pi-sign-in",
             path: "/",
           },
           {
             name: "Error",
-            icon: "pi-home",
+            icon: "pi-times",
             path: "/",
           },
           {
             name: "Access Denied",
-            icon: "pi-home",
+            icon: "pi-lock",
             path: "/",
           },
           {
             name: "Register",
-            icon: "pi-home",
+            icon: "pi-user-plus",
             path: "/",
           },
           {
             name: "Forgot Password",
-            icon: "pi-home",
+            icon: "pi-question",
             path: "/",
           },
           {
             name: "New Password",
-            icon: "pi-home",
+            icon: "pi-cog",
             path: "/",
           },
           {
             name: "Verification",
-            icon: "pi-home",
+            icon: "pi-envelope",
             path: "/",
           },
           {
             name: "Lock Screen",
-            icon: "pi-home",
+            icon: "pi-eye-slash",
             path: "/",
           },
         ],
       },
       {
         name: "Crud",
-        icon: "pi-home",
+        icon: "pi-pencil",
         path: "/",
       },
       {
         name: "Timeline",
-        icon: "pi-home",
+        icon: "pi-calendar",
         path: "/",
       },
       {
         name: "Invoice",
-        icon: "pi-home",
+        icon: "pi-dollar",
         path: "/",
       },
       {
         name: "About Us",
-        icon: "pi-home",
+        icon: "pi-user",
         path: "/",
       },
       {
         name: "Help",
-        icon: "pi-home",
+        icon: "pi-question-circle",
         path: "/",
       },
       {
         name: "Not Found",
-        icon: "pi-home",
+        icon: "pi-exclamation-circle",
         path: "/",
       },
       {
         name: "Empty",
-        icon: "pi-home",
+        icon: "pi-circle-off",
         path: "/",
       },
       {
         name: "FAQ",
-        icon: "pi-home",
+        icon: "pi-question",
         path: "/",
       },
       {
         name: "Contact Us",
-        icon: "pi-home",
+        icon: "pi-phone",
         path: "/",
       },
     ],
@@ -314,37 +314,37 @@ export const sidebarlinks = [
     links: [
       {
         name: "Product Overview",
-        icon: "pi-home",
+        icon: "pi-image",
         path: "/",
       },
       {
         name: "Product List",
-        icon: "pi-home",
+        icon: "pi-list",
         path: "/",
       },
       {
         name: "New Product",
-        icon: "pi-home",
+        icon: "pi-plus",
         path: "/",
       },
       {
         name: "Shopping Cart",
-        icon: "pi-home",
+        icon: "pi-shopping-cart",
         path: "/",
       },
       {
         name: "Checkout Form",
-        icon: "pi-home",
+        icon: "pi-check-square",
         path: "/",
       },
       {
         name: "Order History",
-        icon: "pi-home",
+        icon: "pi-history",
         path: "/",
       },
       {
         name: "Order Summary",
-        icon: "pi-home",
+        icon: "pi-file",
         path: "/",
       },
     ],
@@ -354,12 +354,12 @@ export const sidebarlinks = [
     links: [
       {
         name: "List",
-        icon: "pi-home",
+        icon: "pi-list",
         path: "/",
       },
       {
         name: "Create",
-        icon: "pi-home",
+        icon: "pi-plus",
         path: "/",
       },
     ],
@@ -369,39 +369,39 @@ export const sidebarlinks = [
     links: [
       {
         name: "SubMenu 1",
-        icon: "pi-home",
+        icon: "pi-align-left",
         path: "/",
         links: [
           {
             name: "SubMenu 1.1",
-            icon: "pi-home",
+            icon: "pi-align-left",
             path: "/",
             links: [
               {
                 name: "SubMenu 1.1.1",
-                icon: "pi-home",
+                icon: "pi-align-left",
                 path: "/",
               },
               {
                 name: "SubMenu 1.1.2",
-                icon: "pi-home",
+                icon: "pi-align-left",
                 path: "/",
               },
               {
                 name: "SubMenu 1.1.3",
-                icon: "pi-home",
+                icon: "pi-align-left",
                 path: "/",
               },
             ],
           },
           {
             name: "SubMenu 1.2",
-            icon: "pi-home",
+            icon: "pi-align-left",
             path: "/",
             links: [
               {
                 name: "SubMenu 1.2.1",
-                icon: "pi-home",
+                icon: "pi-align-left",
                 path: "/",
               },
             ],
@@ -410,34 +410,34 @@ export const sidebarlinks = [
       },
       {
         name: "SubMenu 2",
-        icon: "pi-home",
+        icon: "pi-align-left",
         path: "/",
         links: [
           {
             name: "SubMenu 2.1",
-            icon: "pi-home",
+            icon: "pi-align-left",
             path: "/",
             links: [
               {
                 name: "SubMenu 2.1.1",
-                icon: "pi-home",
+                icon: "pi-align-left",
                 path: "/",
               },
               {
                 name: "SubMenu 2.1.2",
-                icon: "pi-home",
+                icon: "pi-align-left",
                 path: "/",
               },
             ],
           },
           {
             name: "SubMenu 2.2",
-            icon: "pi-home",
+            icon: "pi-align-left",
             path: "/",
             links: [
               {
                 name: "SubMenu 2.2.1",
-                icon: "pi-home",
+                icon: "pi-align-left",
                 path: "/",
               },
             ],
@@ -451,12 +451,12 @@ export const sidebarlinks = [
     links: [
       {
         name: "Buy Now",
-        icon: "pi-home",
+        icon: "pi-shoppimg-cart",
         path: "/",
       },
       {
         name: "Documentation",
-        icon: "pi-home",
+        icon: "pi-info-circle",
         path: "/",
       },
     ],

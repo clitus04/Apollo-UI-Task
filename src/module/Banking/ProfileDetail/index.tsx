@@ -4,7 +4,7 @@ import profile from "../../../assets/tony.jpg";
 
 function ProfileDetail() {
   return (
-    <div className="flex align-items-center justify-content-between mb-5">
+    <div className="flex flex-wrap align-items-center justify-content-between mb-5">
       <div className="flex align-items-center">
         <img className="w-4rem h-4rem border-circle" src={profile} alt="tony" />
         <div className="ml-4">
@@ -14,7 +14,7 @@ function ProfileDetail() {
           </span>
         </div>
       </div>
-      <div>
+      <div className="mt-4">
         <Button
           className="mx-1"
           icon="pi pi-arrows-h"
