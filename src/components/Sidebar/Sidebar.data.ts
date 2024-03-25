@@ -34,7 +34,7 @@ export const sidebarlinks = [
           {
             name: "Edit",
             icon: "pi-pencil",
-            path: "/",
+            path: "/apps/blog/edit",
           },
         ],
       },

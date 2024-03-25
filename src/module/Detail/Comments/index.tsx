@@ -38,7 +38,7 @@ function Comments() {
       </span>
       <InputTextarea placeholder="Your comment" className="w-full" rows={5} />
       <div className="flex justify-content-end mt-2">
-        <Button label="Post Comment" />
+        <Button severity="info" label="Post Comment" />
       </div>
     </div>
   );

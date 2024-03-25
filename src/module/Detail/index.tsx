@@ -38,10 +38,20 @@ function Detail() {
         <DetailContent />
         <div className="flex justify-content-between">
           <div>
-            <Button className="mr-3" icon="pi pi-twitter" label="Twitter" />
-            <Button className="mr-3" icon="pi pi-facebook" label="Facebook" />
+            <Button
+              severity="info"
+              className="mr-3"
+              icon="pi pi-twitter"
+              label="Twitter"
+            />
+            <Button
+              severity="info"
+              className="mr-3"
+              icon="pi pi-facebook"
+              label="Facebook"
+            />
           </div>
-          <Button icon="pi pi-pencil" label="Edit Post" />
+          <Button severity="info" icon="pi pi-pencil" label="Edit Post" />
         </div>
         <Comments />
       </Card>

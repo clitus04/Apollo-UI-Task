@@ -1,5 +1,6 @@
 @import "primeflex/primeflex.scss";
 @import "primereact/resources/themes/lara-light-cyan/theme.css";
+@import "./colors";
 
 body {
   height: 100vh;
@@ -9,6 +10,11 @@ body {
 
   #root {
     overflow: hidden;
+  }
+
+  .p-button-info {
+    background-color: $primary_blue;
+    border-color: $primary_blue;
   }
 }
 

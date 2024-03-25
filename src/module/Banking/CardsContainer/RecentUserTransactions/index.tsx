@@ -52,7 +52,9 @@ function RecentUserTransactions() {
         />
         <div className="grid justify-content-between mt-4 py-4">
           <InputText className="col-8" placeholder="$0.00" />
-          <Button className="col-3 flex justify-content-center">Send</Button>
+          <Button className="col-3 flex justify-content-center" severity="info">
+            Send
+          </Button>
         </div>
       </Card>
     </div>

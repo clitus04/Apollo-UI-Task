@@ -39,7 +39,12 @@ function TableLayout() {
               <i className="pi pi-search"></i>
               <InputText placeholder="Search" />
             </div>
-            <Button icon="pi pi-upload" className="ml-2" rounded />
+            <Button
+              icon="pi pi-upload"
+              severity="info"
+              className="ml-2"
+              rounded
+            />
           </div>
         </div>
         <DataTable value={recentSales} paginator rows={5}>
