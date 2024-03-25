@@ -3,6 +3,7 @@ import Dashboard from "../module/Dashboard";
 import List from "../module/List";
 import Detail from "../module/Detail";
 import Edit from "../module/Edit";
+import Calendar from "../module/Calendar";
 
 export const routes = [
   {
@@ -29,5 +30,10 @@ export const routes = [
     path: "/apps/blog/edit",
     name: "edit",
     Component: Edit,
+  },
+  {
+    path: "/apps/calendar",
+    name: "calendar",
+    Component: Calendar,
   },
 ];

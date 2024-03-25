@@ -41,8 +41,8 @@ function Edit() {
               </div>
               <div className="status__card">
                 <div>
-                  <span className="font-bold mr-2">Status:</span>
-                  <span>Draft</span>
+                  <span className="font-bold mr-2">Visibilty:</span>
+                  <span>Private</span>
                 </div>
                 <i className="pi pi-pencil"></i>
               </div>

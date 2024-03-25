@@ -41,7 +41,7 @@ export const sidebarlinks = [
       {
         name: "Calendar",
         icon: "pi-calendar",
-        path: "/",
+        path: "/apps/calendar",
       },
       {
         name: "Chat",
