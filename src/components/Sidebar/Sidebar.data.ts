@@ -29,7 +29,7 @@ export const sidebarlinks = [
           {
             name: "Detail",
             icon: "pi-info-circle",
-            path: "/",
+            path: "/apps/blog/detail",
           },
           {
             name: "Edit",

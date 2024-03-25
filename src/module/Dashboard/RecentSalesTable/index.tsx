@@ -1,9 +1,12 @@
 import { memo, useCallback } from "react";
+import "./index.scss";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { recentSales } from "./recentSales.data";
 import { Card } from "primereact/card";
 import { Tag } from "primereact/tag";
+import { InputText } from "primereact/inputtext";
+import { Button } from "primereact/button";
 
 function TableLayout() {
   const getSeverity = (status: string) => {
@@ -29,7 +32,17 @@ function TableLayout() {
   }, []);
   return (
     <div className="col-12 lg:col-8 dataview">
-      <Card title="Recent Sales" className="h-full">
+      <Card className="h-full">
+        <div className="flex align-items-center justify-content-between mb-4">
+          <span className="title">Recent Sales</span>
+          <div className="flex align-items-center">
+            <div className="search">
+              <i className="pi pi-search"></i>
+              <InputText placeholder="Search" />
+            </div>
+            <Button icon="pi pi-upload" className="ml-2" rounded />
+          </div>
+        </div>
         <DataTable value={recentSales} paginator rows={5}>
           <Column field="name" header="Name" sortable />
           <Column field="category" header="category" sortable />
