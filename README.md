@@ -25,14 +25,13 @@ Start the server
 ```bash
   npm run start or yarn dev
 ```
-
-## Screenshots
-
-![Project Screenshot](/src/assets/Screenshot.png?raw=true "Screenshot")
-
 ## Tech Stack
 
 - React
 - Vite
 - Primereact
 - Primeflex
+  
+## Screenshots
+
+![Project Screenshot](/src/assets/Screenshot.png?raw=true "Screenshot")
