@@ -7,9 +7,9 @@ function StockDetails() {
     <>
       {salesDetails &&
         Array.isArray(salesDetails) &&
-        salesDetails.map((item: any) => {
+        salesDetails.map((item: any, index: number) => {
           return (
-            <div className="col-12 md:col-6 lg:col-3">
+            <div className="col-12 md:col-6 lg:col-3" key={index}>
               <Card>
                 <div className="flex align-items-center justify-content-between w-full px-2">
                   <div className="flex flex-column">

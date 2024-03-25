@@ -1,8 +1,9 @@
 import "./index.scss";
 import ApolloLogo from "../../assets/icons/Apollologo";
 import { sidebarlinks } from "./Sidebar.data";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { getNameFromPath } from "../../utility/getNameFromPath";
 
 interface MenuProp {
   key: number;
@@ -11,11 +12,19 @@ interface MenuProp {
 
 const Menu = ({ key, menu }: MenuProp) => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const isActive = useCallback(
+    (name: string) => {
+      return name === getNameFromPath(location.pathname, sidebarlinks);
+    },
+    [location.pathname]
+  );
 
   return (
     <div key={key} className="mb-3">
       <div className="flex cursor-pointer" onClick={() => navigate(menu?.path)}>
-        <div className="menu__link">
+        <div className={`menu__link ${isActive(menu?.name) ? "active" : ""}`}>
           <i className={`pi ${menu?.icon}`}></i>
           <span className="menu__name">{menu?.name}</span>
         </div>

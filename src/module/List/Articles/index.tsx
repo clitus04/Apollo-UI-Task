@@ -1,5 +1,4 @@
 import { memo, useCallback, useState } from "react";
-import "./index.scss";
 import { Card } from "primereact/card";
 import { Dropdown } from "primereact/dropdown";
 import { Toolbar } from "primereact/toolbar";

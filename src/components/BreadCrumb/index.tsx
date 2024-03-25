@@ -28,13 +28,16 @@ function BreadCrum(props: Props) {
           return (
             <>
               <span
+                key={index * 2}
                 className="cursor-pointer capitalize text-md"
                 onClick={() => handleNavigate(item?.label)}
               >
                 {item?.label}
               </span>
               {index !== items.length - 1 && (
-                <span className="mx-3 text-md">{seperator}</span>
+                <span key={index * 2 + 1} className="mx-3 text-md">
+                  {seperator}
+                </span>
               )}
             </>
           );
