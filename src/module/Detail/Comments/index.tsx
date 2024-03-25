@@ -2,6 +2,7 @@ import { memo } from "react";
 import { comments } from "./comments.data";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
+import { Button } from "primereact/button";
 
 function Comments() {
   return (
@@ -36,6 +37,9 @@ function Comments() {
         <InputText className="w-full" placeholder="Email" />
       </span>
       <InputTextarea placeholder="Your comment" className="w-full" rows={15} />
+      <div className="flex justify-content-end mt-2">
+        <Button label="Post Comment" />
+      </div>
     </div>
   );
 }
