@@ -62,14 +62,14 @@ function Edit() {
             </Panel>
             <div className="grid justify-content-between px-4 mt-4">
               <Button
-                className="col-12 lg:col-5"
+                className="col-12 md:col-5 my-2"
                 label="Discard"
                 severity="danger"
                 icon="pi pi-trash"
                 outlined
               />
               <Button
-                className="col-12 lg:col-5"
+                className="col-12 md:col-5 my-2"
                 label="Publish"
                 icon="pi pi-check"
                 severity="info"
