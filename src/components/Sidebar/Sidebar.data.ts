@@ -46,7 +46,7 @@ export const sidebarlinks = [
       {
         name: "Chat",
         icon: "pi-comments",
-        path: "/",
+        path: "/apps/chat",
       },
       {
         name: "Files",
