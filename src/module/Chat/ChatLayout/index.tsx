@@ -1,4 +1,4 @@
-import { memo, useMemo } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Card } from "primereact/card";
 import { chats } from "../chats.data";
 import { Button } from "primereact/button";
@@ -6,6 +6,8 @@ import { Divider } from "primereact/divider";
 import RecievedChat from "./RecievedChat";
 import SendedChat from "./SendedChat";
 import { InputText } from "primereact/inputtext";
+import { getCurrentTime } from "../../../utility/getCurrentTIme";
+import { generateRandomMessage } from "../../../utility/generateRandomMessage";
 
 interface Props {
   userIndex: number;
@@ -13,7 +15,40 @@ interface Props {
 
 function ChatLayout(props: Props) {
   const { userIndex } = props;
+  const container = useRef<HTMLDivElement>(null);
   const selectedUser = useMemo(() => chats[userIndex], [userIndex, chats]);
+  const [newMessage, setNewMessage] = useState("");
+  const [userChats, setUserChats] = useState(selectedUser.chats);
+
+  const recieveChat = useCallback(() => {
+    const newChat = {
+      message: generateRandomMessage(),
+      time: getCurrentTime(),
+      isRecieved: true,
+    };
+    setUserChats((prev: any) => [...prev, newChat]);
+  }, []);
+
+  const sendChat = useCallback(() => {
+    const newChat = {
+      message: newMessage,
+      time: getCurrentTime(),
+      isRecieved: false,
+    };
+    setUserChats((prev: any) => [...prev, newChat]);
+    setNewMessage("");
+    setTimeout(() => recieveChat(), 2000);
+  }, [newMessage]);
+
+  useEffect(() => {
+    if (container.current) {
+      container.current.scrollTop = container.current.scrollHeight;
+    }
+  }, [userChats]);
+
+  useEffect(() => {
+    setUserChats(selectedUser.chats);
+  }, [userIndex]);
 
   return (
     <Card className="flex-1">
@@ -38,10 +73,10 @@ function ChatLayout(props: Props) {
         </div>
       </div>
       <Divider className="mt-6" />
-      <div className="chats__container">
-        {selectedUser.chats &&
-          Array.isArray(selectedUser.chats) &&
-          selectedUser.chats.map((item: any, index: number) =>
+      <div className="chats__container" ref={container}>
+        {userChats &&
+          Array.isArray(userChats) &&
+          userChats.map((item: any, index: number) =>
             item.isRecieved ? (
               <RecievedChat
                 key={index}
@@ -56,10 +91,23 @@ function ChatLayout(props: Props) {
           )}
       </div>
       <Divider />
-      <div className="flex align-items-center justify-content-between">
-        <InputText placeholder="Type a message" />
-        <Button icon="pi pi-send" label="send" />
-      </div>
+      <form
+        className="flex align-items-center justify-content-between"
+        onSubmit={(e) => e.preventDefault()}
+      >
+        <InputText
+          className="w-9"
+          placeholder="Type a message"
+          value={newMessage}
+          onChange={(e) => setNewMessage(e.target.value)}
+        />
+        <Button
+          type="submit"
+          icon="pi pi-send"
+          label="send"
+          onClick={sendChat}
+        />
+      </form>
     </Card>
   );
 }
