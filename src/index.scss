@@ -15,10 +15,22 @@ body {
   .p-button-info {
     background-color: $primary_blue;
     border-color: $primary_blue;
+
+    &.p-button-outlined {
+      background: none;
+      color: $primary_blue;
+    }
   }
 
   .text-black {
     color: black;
+  }
+
+  .border__light {
+    border: 1px solid #aaaaaa;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.25rem;
   }
 }
 

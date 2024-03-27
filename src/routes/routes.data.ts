@@ -5,6 +5,7 @@ import Detail from "../module/Detail";
 import Edit from "../module/Edit";
 import Calendar from "../module/Calendar";
 import Chat from "../module/Chat";
+import LandingScreen from "../module/Files/LandingScreen";
 
 export const routes = [
   {
@@ -41,5 +42,10 @@ export const routes = [
     path: "/apps/chat",
     name: "chat",
     Component: Chat,
+  },
+  {
+    path: "/apps/files",
+    name: "files",
+    Component: LandingScreen,
   },
 ];

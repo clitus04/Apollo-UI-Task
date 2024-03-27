@@ -51,7 +51,7 @@ export const sidebarlinks = [
       {
         name: "Files",
         icon: "pi-folder",
-        path: "/",
+        path: "/apps/files",
       },
       {
         name: "Mail",

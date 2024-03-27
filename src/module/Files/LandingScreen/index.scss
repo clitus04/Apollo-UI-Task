@@ -1,0 +1,84 @@
+@import "../../../colors";
+
+.files {
+  .p-progressbar {
+    height: 8px;
+    margin: 24px 0;
+    .p-progressbar-label {
+      display: none;
+    }
+  }
+
+  .chart__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .data__label {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 35%;
+
+    span {
+      color: $primary_blue;
+      margin: 0.25rem 0;
+      font-size: 1.25rem;
+    }
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $light_blue;
+    margin: 1rem 0;
+    border-radius: 0.25rem;
+    i {
+      font-size: 1.5rem;
+    }
+  }
+
+  .template__messsage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pi-upload {
+      color: #000000;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .p-fileupload-choose {
+    background-color: $primary_blue;
+    border-color: $primary_blue;
+  }
+
+  button[aria-label="Upload"] {
+    display: none !important;
+  }
+
+  button[aria-label="Cancel"] {
+    display: none !important;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+
+    .pi-times {
+      color: $primary_red;
+      font-size: 0.8em;
+    }
+    .pi-search {
+      color: $primary_blue;
+      font-size: 0.8em;
+    }
+  }
+}
