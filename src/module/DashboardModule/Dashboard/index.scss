@@ -1,0 +1,39 @@
+@import "../../../colors";
+
+.dashboard {
+  .p-card-title {
+    font-size: 1.1rem;
+    color: #000;
+  }
+
+  .title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  .dataview {
+    .p-rating-item-active .p-rating-icon {
+      color: #5356cc;
+    }
+    .p-input-icon-left {
+      input {
+        border-radius: 2rem;
+      }
+    }
+  }
+}
+
+.stock__details {
+  .growth {
+    color: $primary_green;
+  }
+
+  .loss {
+    color: $primary_pink;
+  }
+
+  .p-card-body {
+    padding: 0.25rem;
+  }
+}

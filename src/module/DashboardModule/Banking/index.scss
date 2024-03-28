@@ -1,0 +1,19 @@
+@import "../../../colors";
+
+.banking {
+  .p-card-title {
+    font-size: 1.1rem;
+    color: #000;
+  }
+}
+
+.card__container {
+  .p-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .text-blue {
+    color: $primary_blue;
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Mainlayout from "../module/Mainlayout";
+import Mainlayout from "./Mainlayout";
 import { routes } from "./routes.data";
 
 function MainRoute() {
@@ -12,7 +12,7 @@ function MainRoute() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Mainlayout />}>
+        <Route element={<Mainlayout />}>
           {routes &&
             Array.isArray(routes) &&
             routes.map((item: Item, index: number) => {

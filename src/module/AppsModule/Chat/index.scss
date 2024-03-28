@@ -1,0 +1,79 @@
+@import "../../../colors";
+
+.chat {
+  display: flex;
+  gap: 2rem;
+
+  .users__container {
+    margin-top: 1rem;
+    max-height: 18rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .user__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem 0.75rem 0.5rem;
+    cursor: pointer;
+  }
+
+  .image__container {
+    position: relative;
+
+    .status__indicator {
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      border: 1px solid #ffffff;
+    }
+
+    .online {
+      background-color: green;
+    }
+
+    .away {
+      background-color: chocolate;
+    }
+
+    .call {
+      background-color: crimson;
+    }
+  }
+
+  .chats__container {
+    max-height: 20rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .recieved__message {
+      border: 1px solid #aaaaaa;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.25rem;
+    }
+
+    .sent__message {
+      background-color: $light_blue;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.25rem;
+    }
+
+    .pi-check {
+      margin-left: 0.5rem;
+      color: $primary_green;
+    }
+  }
+}

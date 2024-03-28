@@ -1,12 +1,12 @@
-import Banking from "../module/Banking";
-import Dashboard from "../module/Dashboard";
-import List from "../module/List";
-import Detail from "../module/Detail";
-import Edit from "../module/Edit";
-import Calendar from "../module/Calendar";
-import Chat from "../module/Chat";
-import Files from "../module/Files/LandingScreen";
-import Tasks from "../module/Tasks/TaskDashboard";
+import Banking from "../module/DashboardModule/Banking";
+import Dashboard from "../module/DashboardModule/Dashboard";
+import List from "../module/AppsModule/BlogModule/List";
+import Detail from "../module/AppsModule/BlogModule/Detail";
+import Edit from "../module/AppsModule/BlogModule/Edit";
+import Calendar from "../module/AppsModule/Calendar";
+import Chat from "../module/AppsModule/Chat";
+import Files from "../module/AppsModule/Files";
+import Tasks from "../module/AppsModule/Tasks";
 
 export const routes = [
   {

@@ -1,0 +1,59 @@
+@import "../../../../colors";
+
+.edit {
+  .title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  .p-fileupload-choose {
+    background-color: $primary_blue;
+    border-color: $primary_blue;
+  }
+
+  button[aria-label="Upload"] {
+    display: none !important;
+  }
+
+  button[aria-label="Cancel"] {
+    display: none !important;
+  }
+
+  .template__messsage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+
+    .pi-file {
+      color: $primary_blue;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .status__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    background-color: $light_blue;
+    padding: 1rem;
+    color: black;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .tag {
+    background-color: $light_blue;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+  }
+}
