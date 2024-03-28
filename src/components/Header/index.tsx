@@ -32,8 +32,8 @@ function Header({ sidebarVisible, setSidebarVisible }: Prop) {
   }, [location.pathname]);
 
   return (
-    <div className="header h-6rem flex align-items-center justify-content-between sticky top-0">
-      <div className="flex align-items-center">
+    <div className="header h-6rem flex align-items-center sticky top-0">
+      <div className="flex align-items-center flex-1">
         <span className="sidebar__toggler">
           <i
             className="pi pi-bars"
@@ -42,10 +42,10 @@ function Header({ sidebarVisible, setSidebarVisible }: Prop) {
         </span>
         <BreadCrumb items={items} seperator={"/"} />
       </div>
-      <div className="flex align-items-center justify-content-around w-4">
+      <div className="flex align-items-center justify-content-end flex-1 gap-3">
         <span className="p-input-icon-left">
           <i className="pi pi-search" />
-          <InputText placeholder="Search" />
+          <InputText placeholder="Search" className="py-2" />
         </span>
         <i className="pi pi-cog"></i>
         <img src={Profile} alt="" className="h-2rem w-2rem border-circle" />

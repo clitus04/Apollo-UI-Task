@@ -7,6 +7,7 @@ import Calendar from "../module/AppsModule/Calendar";
 import Chat from "../module/AppsModule/Chat";
 import Files from "../module/AppsModule/Files";
 import Tasks from "../module/AppsModule/Tasks";
+import FormLayout from "../module/UiKitModule/FormLayout";
 
 export const routes = [
   {
@@ -53,5 +54,10 @@ export const routes = [
     path: "/apps/taskList",
     name: "Task List",
     Component: Tasks,
+  },
+  {
+    path: "/uikit/formlayout",
+    name: "Form Layout",
+    Component: FormLayout,
   },
 ];

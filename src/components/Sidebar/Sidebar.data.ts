@@ -88,7 +88,7 @@ export const sidebarlinks = [
       {
         name: "Form Layout",
         icon: "pi-id-card",
-        path: "/",
+        path: "/uikit/formlayout",
       },
       {
         name: "Input",
