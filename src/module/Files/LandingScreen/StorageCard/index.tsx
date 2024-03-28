@@ -44,7 +44,7 @@ function StorageCard(props: Props) {
             rounded
             aria-controls={`menu_${key}`}
             onClick={toggleMenu}
-          ></Button>
+          />
         </div>
         <Menu model={model} popup ref={menuRef} id={`menu_${key}`} />
         <ProgressBar value={progress} />

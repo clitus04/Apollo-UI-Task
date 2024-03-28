@@ -5,7 +5,8 @@ import Detail from "../module/Detail";
 import Edit from "../module/Edit";
 import Calendar from "../module/Calendar";
 import Chat from "../module/Chat";
-import LandingScreen from "../module/Files/LandingScreen";
+import Files from "../module/Files/LandingScreen";
+import Tasks from "../module/Tasks/TaskDashboard";
 
 export const routes = [
   {
@@ -46,6 +47,11 @@ export const routes = [
   {
     path: "/apps/files",
     name: "files",
-    Component: LandingScreen,
+    Component: Files,
+  },
+  {
+    path: "/apps/taskList",
+    name: "Task List",
+    Component: Tasks,
   },
 ];

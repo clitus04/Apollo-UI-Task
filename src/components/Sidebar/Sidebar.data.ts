@@ -78,7 +78,7 @@ export const sidebarlinks = [
       {
         name: "Task List",
         icon: "pi-check-square",
-        path: "/",
+        path: "/apps/taskList",
       },
     ],
   },
