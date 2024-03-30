@@ -451,7 +451,7 @@ export const sidebarlinks = [
     links: [
       {
         name: "Buy Now",
-        icon: "pi-shoppimg-cart",
+        icon: "pi-shopping-cart",
         path: "/",
       },
       {
