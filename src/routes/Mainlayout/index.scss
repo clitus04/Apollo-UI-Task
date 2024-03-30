@@ -10,6 +10,7 @@
     background-color: $light_blue;
     overflow-y: auto;
     flex: 1;
+    padding-bottom: 2rem;
 
     &::-webkit-scrollbar {
       display: none;
@@ -22,7 +23,22 @@
 
   .sidebar {
     transition: width 0.3s ease;
-    width: 15%;
+
+    @media (min-width: 769px) {
+      width: 15rem;
+    }
+
+    @media (min-width: 426px) and (max-width: 768px) {
+      width: 12rem;
+    }
+
+    @media (max-width: 426px) {
+      width: 15rem;
+      position: fixed;
+      z-index: 2;
+      background-color: #ffffff;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
   }
 
   .closed {

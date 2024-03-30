@@ -1,0 +1,29 @@
+.invalid__state {
+  .p-card-content {
+    padding: 0;
+    .title {
+      color: black;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+    .p-autocomplete {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+
+    .p-chips {
+      width: 100%;
+      ul {
+        width: 100%;
+      }
+    }
+
+    .p-password {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

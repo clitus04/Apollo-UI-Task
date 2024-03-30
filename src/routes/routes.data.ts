@@ -10,6 +10,7 @@ import Tasks from "../module/AppsModule/Tasks";
 import FormLayout from "../module/UiKitModule/FormLayout";
 import Input from "../module/UiKitModule/Input";
 import FloatLabel from "../module/UiKitModule/FloatLabel";
+import InvalidState from "../module/UiKitModule/InvalidState";
 
 export const routes = [
   {
@@ -71,5 +72,10 @@ export const routes = [
     path: "/uikit/floatlabel",
     name: "Float Label",
     Component: FloatLabel,
+  },
+  {
+    path: "/uikit/invalidState",
+    name: "Invalid State",
+    Component: InvalidState,
   },
 ];

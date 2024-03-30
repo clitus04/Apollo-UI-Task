@@ -4,7 +4,6 @@ import { sidebarlinks } from "./Sidebar.data";
 import { useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getNameFromPath } from "../../utility/getNameFromPath";
-
 interface MenuProp {
   key: number;
   menu: any;
@@ -64,11 +63,20 @@ const SubMenu = ({ key, menu }: MenuProp) => {
   );
 };
 
-function Sidebar() {
+interface Props {
+  setSidebarVisible: any;
+}
+
+function Sidebar(props: Props) {
+  const { setSidebarVisible } = props;
+
   return (
     <div className="flex flex-column">
-      <div className="h-6rem flex justify-content-center align-items-center">
+      <div className="h-6rem flex justify-content-center align-items-center relative">
         <ApolloLogo color={"#6366F1"} />
+        <span className="close__icon" onClick={() => setSidebarVisible(false)}>
+          <i className="pi pi-times"></i>
+        </span>
       </div>
       <div className="menu__links__container">
         {sidebarlinks &&

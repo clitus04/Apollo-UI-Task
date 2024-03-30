@@ -103,7 +103,7 @@ export const sidebarlinks = [
       {
         name: "Invalid State",
         icon: "pi-exclamation-circle",
-        path: "/",
+        path: "/uikit/invalidState",
       },
       {
         name: "Button",

@@ -8,8 +8,8 @@ function Mainlayout() {
   const [sidebarVisible, setSidebarVisible] = useState<boolean>(true);
   return (
     <div className="app__layout">
-      <div className={` sidebar ${sidebarVisible && "closed"}`}>
-        <Sidebar />
+      <div className={` sidebar ${!sidebarVisible && "closed"}`}>
+        <Sidebar setSidebarVisible={setSidebarVisible} />
       </div>
       <div className="main__layout">
         <Header
