@@ -86,11 +86,12 @@ function TaskList(props: Props) {
                   </div>
                   <div className="flex justify-content-between align-items-center">
                     <AvatarGroup>
-                      {item.members.map((member: Member) => (
+                      {item.members.map((member: Member, index: number) => (
                         <Avatar
                           image={member.image}
                           shape="circle"
                           size="normal"
+                          key={index}
                         />
                       ))}
                     </AvatarGroup>

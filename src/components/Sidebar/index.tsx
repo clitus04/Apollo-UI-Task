@@ -5,11 +5,10 @@ import { useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getNameFromPath } from "../../utility/getNameFromPath";
 interface MenuProp {
-  key: number;
   menu: any;
 }
 
-const Menu = ({ key, menu }: MenuProp) => {
+const Menu = ({ menu }: MenuProp) => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -21,7 +20,7 @@ const Menu = ({ key, menu }: MenuProp) => {
   );
 
   return (
-    <div key={key} className="mb-3">
+    <div className="mb-3">
       <div className="flex cursor-pointer" onClick={() => navigate(menu?.path)}>
         <div className={`menu__link ${isActive(menu?.name) ? "active" : ""}`}>
           <i className={`pi ${menu?.icon}`}></i>
@@ -32,10 +31,10 @@ const Menu = ({ key, menu }: MenuProp) => {
   );
 };
 
-const SubMenu = ({ key, menu }: MenuProp) => {
+const SubMenu = ({ menu }: MenuProp) => {
   const [isOpened, setIsOpened] = useState<boolean>(false);
   return (
-    <div key={key} className="flex flex-column">
+    <div className="flex flex-column">
       <div
         className="w-full mb-3 flex justify-content-between align-items-center cursor-pointer"
         onClick={() => setIsOpened(!isOpened)}

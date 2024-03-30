@@ -9,11 +9,10 @@ interface Props {
   progress: number;
   storage: number;
   title: string;
-  key: number;
 }
 
 function StorageCard(props: Props) {
-  const { files, progress, storage, title, key } = props;
+  const { files, progress, storage, title } = props;
   const menuRef = useRef<Menu>(null);
 
   const model = [
@@ -34,19 +33,13 @@ function StorageCard(props: Props) {
   }, []);
 
   return (
-    <div key={key} className="col-12 lg:col-3">
+    <div className="col-12 lg:col-3">
       <Card className="border-round-lg">
         <div className="flex align-items-center justify-content-between">
           <span className="text-lg text-black font-bold">{title}</span>
-          <Button
-            icon="pi pi-ellipsis-v"
-            text
-            rounded
-            aria-controls={`menu_${key}`}
-            onClick={toggleMenu}
-          />
+          <Button icon="pi pi-ellipsis-v" text rounded onClick={toggleMenu} />
         </div>
-        <Menu model={model} popup ref={menuRef} id={`menu_${key}`} />
+        <Menu model={model} popup ref={menuRef} />
         <ProgressBar value={progress} />
         <div className="flex align-items-center justify-content-between">
           <span className="text-black">{`${files} Files`}</span>

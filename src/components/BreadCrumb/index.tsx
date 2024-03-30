@@ -26,20 +26,17 @@ function BreadCrum(props: Props) {
         Array.isArray(items) &&
         items.map((item: any, index: number) => {
           return (
-            <>
+            <div key={index}>
               <span
-                key={index * 2}
                 className="cursor-pointer capitalize text-md"
                 onClick={() => handleNavigate(item?.label)}
               >
                 {item?.label}
               </span>
               {index !== items.length - 1 && (
-                <span key={index * 2 + 1} className="mx-3 text-md">
-                  {seperator}
-                </span>
+                <span className="mx-3 text-md">{seperator}</span>
               )}
-            </>
+            </div>
           );
         })}
     </div>
