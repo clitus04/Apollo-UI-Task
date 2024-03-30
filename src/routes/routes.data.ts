@@ -8,6 +8,7 @@ import Chat from "../module/AppsModule/Chat";
 import Files from "../module/AppsModule/Files";
 import Tasks from "../module/AppsModule/Tasks";
 import FormLayout from "../module/UiKitModule/FormLayout";
+import Input from "../module/UiKitModule/Input";
 
 export const routes = [
   {
@@ -59,5 +60,10 @@ export const routes = [
     path: "/uikit/formlayout",
     name: "Form Layout",
     Component: FormLayout,
+  },
+  {
+    path: "/uikit/input",
+    name: "Input",
+    Component: Input,
   },
 ];

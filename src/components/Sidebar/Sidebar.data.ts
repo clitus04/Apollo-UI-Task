@@ -93,7 +93,7 @@ export const sidebarlinks = [
       {
         name: "Input",
         icon: "pi-check-square",
-        path: "/",
+        path: "/uikit/input",
       },
       {
         name: "Float Label",
