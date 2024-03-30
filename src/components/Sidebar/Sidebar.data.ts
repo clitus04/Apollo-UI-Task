@@ -98,7 +98,7 @@ export const sidebarlinks = [
       {
         name: "Float Label",
         icon: "pi-bookmark",
-        path: "/",
+        path: "/uikit/floatlabel",
       },
       {
         name: "Invalid State",

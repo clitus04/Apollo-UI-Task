@@ -6,7 +6,7 @@ import Dropdown from "./Dropdown";
 import { Calendar } from "primereact/calendar";
 import { Nullable } from "primereact/ts-helpers";
 import { InputNumber } from "primereact/inputnumber";
-import { Chips, ChipsChangeEvent } from "primereact/chips";
+import { Chips } from "primereact/chips";
 
 function TextInputs() {
   const [calendarValue, setCalendarValue] = useState<Nullable<Date>>(

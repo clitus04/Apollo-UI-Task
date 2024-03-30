@@ -9,6 +9,7 @@ import Files from "../module/AppsModule/Files";
 import Tasks from "../module/AppsModule/Tasks";
 import FormLayout from "../module/UiKitModule/FormLayout";
 import Input from "../module/UiKitModule/Input";
+import FloatLabel from "../module/UiKitModule/FloatLabel";
 
 export const routes = [
   {
@@ -65,5 +66,10 @@ export const routes = [
     path: "/uikit/input",
     name: "Input",
     Component: Input,
+  },
+  {
+    path: "/uikit/floatlabel",
+    name: "Float Label",
+    Component: FloatLabel,
   },
 ];
