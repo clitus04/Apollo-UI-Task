@@ -108,7 +108,7 @@ export const sidebarlinks = [
       {
         name: "Button",
         icon: "pi-box",
-        path: "/",
+        path: "/uikit/button",
       },
       {
         name: "Table",

@@ -21,6 +21,12 @@ body {
       background: none;
       color: $primary_blue;
     }
+
+    &.p-button-text {
+      background: none;
+      color: $primary_blue;
+      border: none;
+    }
   }
 
   .text-black {
