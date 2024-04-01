@@ -1,9 +1,28 @@
+import { useCallback, useState } from "react";
+import "./index.scss";
 import { Card } from "primereact/card";
 import { Button as PrimeButton } from "primereact/button";
 import ButtonsTemplate from "./ButtonsTemplate";
 import { SplitButton } from "primereact/splitbutton";
 
 function Button() {
+  const [loaders, setLoaders] = useState({
+    loader1: false,
+    loader2: false,
+    loader3: false,
+    loader4: false,
+  });
+
+  const buttonClick = useCallback(
+    (buttonId: string) => {
+      setLoaders({ ...loaders, [buttonId]: true });
+      setTimeout(() => {
+        setLoaders({ ...loaders, [buttonId]: false });
+      }, 2000);
+    },
+    [loaders]
+  );
+
   const severities = [
     undefined,
     "secondary",
@@ -28,7 +47,7 @@ function Button() {
     },
   ];
   return (
-    <div className="button grid">
+    <div className="button__layout grid">
       <div className="col-12 lg:col-6">
         <Card title="Default">
           <PrimeButton className="mr-2" label="Submit" severity="info" />
@@ -56,7 +75,7 @@ function Button() {
             <PrimeButton icon="pi pi-times" label="Cancel" security="info" />
           </span>
         </Card>
-        <Card title="SplitButton">
+        <Card title="SplitButton" className="mt-5">
           {severities.map((item: any, index: number) => (
             <SplitButton
               key={index}
@@ -104,6 +123,38 @@ function Button() {
         </Card>
         <Card title="Rounded Outlined" className="mt-5">
           <ButtonsTemplate rounded outlined showLabel={false} showIcon={true} />
+        </Card>
+        <Card title="Loading" className="mt-5">
+          <PrimeButton
+            icon="pi pi-search"
+            label="Search"
+            severity="info"
+            className="mr-2"
+            loading={loaders.loader1}
+            onClick={() => buttonClick("loader1")}
+          />
+          <PrimeButton
+            icon="pi pi-search"
+            label="Search"
+            severity="info"
+            className="mr-2"
+            loading={loaders.loader2}
+            onClick={() => buttonClick("loader2")}
+          />
+          <PrimeButton
+            icon="pi pi-search"
+            severity="info"
+            className="mr-2"
+            loading={loaders.loader3}
+            onClick={() => buttonClick("loader3")}
+          />
+          <PrimeButton
+            label="Search"
+            severity="info"
+            className="mr-2"
+            loading={loaders.loader4}
+            onClick={() => buttonClick("loader4")}
+          />
         </Card>
       </div>
     </div>
